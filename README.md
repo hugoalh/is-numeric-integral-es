@@ -52,7 +52,7 @@ An ES (JavaScript & TypeScript) module to determine whether the numeric is integ
 
 *This module does not require any runtime permission.*
 
-## 🧩 APIs
+## 🧩 APIs (Excerpt)
 
 - ```ts
   function isNumericIntegral(typeName: NumericIntegralType | keyof typeof NumericIntegralType, item: bigint | number): boolean;
@@ -62,7 +62,7 @@ An ES (JavaScript & TypeScript) module to determine whether the numeric is integ
   ```
 
 > [!NOTE]
-> - For the prettier documentation, can visit via:
+> - For the full or prettier documentation, can visit via:
 >   - [Deno CLI `deno doc`](https://docs.deno.com/runtime/reference/cli/documentation_generator/)
 >   - [JSR](https://jsr.io/@hugoalh/is-numeric-integral)
 
