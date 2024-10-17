@@ -1,0 +1,19 @@
+# yaml-language-server: $schema=https://citation-file-format.github.io/1.2.0/schema.json
+cff-version: "1.2.0"
+title: "Is Numeric Integral (ES)"
+message: "If you use this software, please cite it using the metadata from this file."
+type: "software"
+authors:
+  - name: "hugoalh Studio"
+repository-code: "https://github.com/hugoalh-studio/is-numeric-integral-es"
+keywords:
+  - "es"
+  - "integral"
+  - "is"
+  - "javascript"
+  - "js"
+  - "modulejs"
+  - "numeric"
+  - "ts"
+  - "typescript"
+license: "MIT"
