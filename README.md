@@ -2,7 +2,7 @@
 
 [**⚖️** MIT](./LICENSE.md)
 
-[![GitHub: hugoalh-studio/is-numeric-integral-es](https://img.shields.io/github/v/release/hugoalh-studio/is-numeric-integral-es?label=hugoalh-studio/is-numeric-integral-es&labelColor=181717&logo=github&logoColor=ffffff&sort=semver&style=flat "GitHub: hugoalh-studio/is-numeric-integral-es")](https://github.com/hugoalh-studio/is-numeric-integral-es)
+[![GitHub: hugoalh/is-numeric-integral-es](https://img.shields.io/github/v/release/hugoalh/is-numeric-integral-es?label=hugoalh/is-numeric-integral-es&labelColor=181717&logo=github&logoColor=ffffff&sort=semver&style=flat "GitHub: hugoalh/is-numeric-integral-es")](https://github.com/hugoalh/is-numeric-integral-es)
 [![JSR: @hugoalh/is-numeric-integral](https://img.shields.io/jsr/v/@hugoalh/is-numeric-integral?label=@hugoalh/is-numeric-integral&labelColor=F7DF1E&logo=jsr&logoColor=000000&style=flat "JSR: @hugoalh/is-numeric-integral")](https://jsr.io/@hugoalh/is-numeric-integral)
 [![NPM: @hugoalh/is-numeric-integral](https://img.shields.io/npm/v/@hugoalh/is-numeric-integral?label=@hugoalh/is-numeric-integral&labelColor=CB3837&logo=npm&logoColor=ffffff&style=flat "NPM: @hugoalh/is-numeric-integral")](https://www.npmjs.com/package/@hugoalh/is-numeric-integral)
 
@@ -26,7 +26,7 @@ An ES (JavaScript & TypeScript) module to determine whether the numeric is integ
 
 - **Remote - GitHub Raw:**
   ```
-  https://raw.githubusercontent.com/hugoalh-studio/is-numeric-integral-es/{Tag}/mod.ts
+  https://raw.githubusercontent.com/hugoalh/is-numeric-integral-es/{Tag}/mod.ts
   ```
 - **JSR:**
   ```

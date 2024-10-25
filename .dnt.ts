@@ -19,15 +19,15 @@ await invokeDenoNodeJSTransformer({
 			"is",
 			"numeric"
 		],
-		homepage: "https://github.com/hugoalh-studio/is-numeric-integral-es#readme",
+		homepage: "https://github.com/hugoalh/is-numeric-integral-es#readme",
 		bugs: {
-			url: "https://github.com/hugoalh-studio/is-numeric-integral-es/issues"
+			url: "https://github.com/hugoalh/is-numeric-integral-es/issues"
 		},
 		license: "MIT",
 		author: "hugoalh",
 		repository: {
 			type: "git",
-			url: "git+https://github.com/hugoalh-studio/is-numeric-integral-es.git"
+			url: "git+https://github.com/hugoalh/is-numeric-integral-es.git"
 		},
 		scripts: {
 		},
