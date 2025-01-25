@@ -12,7 +12,7 @@ function testkit(value: bigint | number, result: Record<`${NumericIntegralType}`
 		}
 	};
 }
-Deno.test("-8n", { permissions: "none" }, testkit(-8n, {
+Deno.test("AllType -8n", { permissions: "none" }, testkit(-8n, {
 	int128: true,
 	int16: true,
 	int32: true,
@@ -24,7 +24,7 @@ Deno.test("-8n", { permissions: "none" }, testkit(-8n, {
 	uint64: false,
 	uint8: false
 }));
-Deno.test("8n", { permissions: "none" }, testkit(8n, {
+Deno.test("AllType 8n", { permissions: "none" }, testkit(8n, {
 	int128: true,
 	int16: true,
 	int32: true,
@@ -36,7 +36,7 @@ Deno.test("8n", { permissions: "none" }, testkit(8n, {
 	uint64: true,
 	uint8: true
 }));
-Deno.test("256", { permissions: "none" }, testkit(256, {
+Deno.test("AllType 256", { permissions: "none" }, testkit(256, {
 	int128: true,
 	int16: true,
 	int32: true,
@@ -48,7 +48,7 @@ Deno.test("256", { permissions: "none" }, testkit(256, {
 	uint64: true,
 	uint8: false
 }));
-Deno.test("9876", { permissions: "none" }, testkit(9876, {
+Deno.test("AllType 9876", { permissions: "none" }, testkit(9876, {
 	int128: true,
 	int16: true,
 	int32: true,
@@ -60,3 +60,14 @@ Deno.test("9876", { permissions: "none" }, testkit(9876, {
 	uint64: true,
 	uint8: false
 }));
+Deno.test("1", { permissions: "none" }, () => {
+	assertEquals(isNumericIntegral("Byte", 9876), false);
+});
+
+Deno.test("2", { permissions: "none" }, () => {
+	assertEquals(isNumericIntegral("UInt8", 256), false);
+});
+
+Deno.test("3", { permissions: "none" }, () => {
+	assertEquals(isNumericIntegral("Byte", 8n), true);
+})

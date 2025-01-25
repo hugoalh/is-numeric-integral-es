@@ -55,10 +55,7 @@ An ES (JavaScript & TypeScript) module to determine whether the numeric is integ
 ## 🧩 APIs
 
 - ```ts
-  function isNumericIntegral(typeName: NumericIntegralType | keyof typeof NumericIntegralType, item: bigint | number): boolean;
-  ```
-- ```ts
-  enum NumericIntegralType;
+  function isNumericIntegral(typeName: NumericIntegralType | NumericIntegralTypeExtend, item: bigint | number): boolean;
   ```
 
 > [!NOTE]
