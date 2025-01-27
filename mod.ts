@@ -248,7 +248,7 @@ function getNumericIntegralTypeRange(typeName: NumericIntegralType | NumericInte
 		case "uint128":
 			return resolveNumericIntegralTypeRange(false, 128n);
 		default:
-			throw new RangeError(`\`${typeName}\` is not a valid integral numeric type! Only accept these values: ${Array.from(Object.keys(integralTypes)).sort().join(", ")}`);
+			throw new RangeError(`\`${typeName}\` is not a valid integral numeric type! Only accept these values: ${Object.keys(integralTypes).sort().join(", ")}`);
 	}
 }
 /**
