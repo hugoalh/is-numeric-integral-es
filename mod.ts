@@ -276,7 +276,7 @@ export function isNumericIntegral(typeName: NumericIntegralType | NumericIntegra
 	const {
 		maximum,
 		minimum
-	} = getNumericIntegralTypeRange(typeName);
+	}: NumericIntegralTypeRange = getNumericIntegralTypeRange(typeName);
 	if (typeof item === "bigint") {
 		return (minimum <= item && item <= maximum);
 	}
