@@ -3,7 +3,7 @@ import {
 	isNumericIntegral,
 	type NumericIntegralType
 } from "./mod.ts";
-function testkit(value: bigint | number, result: Record<`${NumericIntegralType}`, boolean>): ((t: Deno.TestContext) => void | Promise<void>) {
+function testkit(value: bigint | number, result: Record<NumericIntegralType, boolean>): ((t: Deno.TestContext) => void | Promise<void>) {
 	return async (t) => {
 		for (const [name, expected] of Object.entries(result)) {
 			await t.step(name, () => {
@@ -70,4 +70,4 @@ Deno.test("2", { permissions: "none" }, () => {
 
 Deno.test("3", { permissions: "none" }, () => {
 	assertEquals(isNumericIntegral("Byte", 8n), true);
-})
+});
