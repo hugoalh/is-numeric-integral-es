@@ -6,7 +6,7 @@
 [![JSR: @hugoalh/is-numeric-integral](https://img.shields.io/jsr/v/@hugoalh/is-numeric-integral?label=@hugoalh/is-numeric-integral&labelColor=F7DF1E&logo=jsr&logoColor=000000&style=flat "JSR: @hugoalh/is-numeric-integral")](https://jsr.io/@hugoalh/is-numeric-integral)
 [![NPM: @hugoalh/is-numeric-integral](https://img.shields.io/npm/v/@hugoalh/is-numeric-integral?label=@hugoalh/is-numeric-integral&labelColor=CB3837&logo=npm&logoColor=ffffff&style=flat "NPM: @hugoalh/is-numeric-integral")](https://www.npmjs.com/package/@hugoalh/is-numeric-integral)
 
-An ES (JavaScript & TypeScript) module to determine whether the numeric is integral.
+An ECMAScript (JavaScript & TypeScript) module to determine whether the numeric is integral.
 
 ## 🔰 Begin
 

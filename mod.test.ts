@@ -1,4 +1,4 @@
-import { assertEquals } from "STD/assert/equals";
+import { deepStrictEqual } from "node:assert";
 import {
 	isNumericIntegral,
 	type NumericIntegralType
@@ -7,7 +7,7 @@ function testkit(value: bigint | number, result: Record<NumericIntegralType, boo
 	return async (t) => {
 		for (const [name, expected] of Object.entries(result)) {
 			await t.step(name, () => {
-				assertEquals(isNumericIntegral(name as NumericIntegralType, value), expected);
+				deepStrictEqual(isNumericIntegral(name as NumericIntegralType, value), expected);
 			});
 		}
 	};
@@ -61,13 +61,13 @@ Deno.test("AllType 9876", { permissions: "none" }, testkit(9876, {
 	uint8: false
 }));
 Deno.test("1", { permissions: "none" }, () => {
-	assertEquals(isNumericIntegral("Byte", 9876), false);
+	deepStrictEqual(isNumericIntegral("Byte", 9876), false);
 });
 
 Deno.test("2", { permissions: "none" }, () => {
-	assertEquals(isNumericIntegral("UInt8", 256), false);
+	deepStrictEqual(isNumericIntegral("UInt8", 256), false);
 });
 
 Deno.test("3", { permissions: "none" }, () => {
-	assertEquals(isNumericIntegral("Byte", 8n), true);
+	deepStrictEqual(isNumericIntegral("Byte", 8n), true);
 });
