@@ -256,17 +256,17 @@ function getNumericIntegralTypeRange(typeName: NumericIntegralType | NumericInte
  * @param {NumericIntegralType | NumericIntegralTypeExtend} typeName Name of the integral numeric type.
  * @param {bigint | number} item Item that need to determine.
  * @returns {boolean} Determine result.
- * @example 1
+ * @example
  * ```ts
  * isNumericIntegral("Byte", 9876);
  * //=> false
  * ```
- * @example 2
+ * @example
  * ```ts
  * isNumericIntegral("UInt8", 256);
  * //=> false
  * ```
- * @example 3
+ * @example
  * ```ts
  * isNumericIntegral("Byte", 8n);
  * //=> true
